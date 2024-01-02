@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "run",
+            "dependsOn": [
+                "build"
+            ],
+            "program": "$PROJECT_DIR$/solution.exe",
+        },
+        {
+            "type": "command",
+            "name": "build",
+            "program": "C:/msys64/ucrt64/bin/g++.exe",
+            "args": [
+                "$PROJECT_DIR$/main.cpp",
+                "-std=c++17",
+                "-pthread",
+                "-O2",
+                "-o",
+                "solution"
+            ],
+
+        },
+    ]
+}
