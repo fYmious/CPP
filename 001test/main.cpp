@@ -1,6 +1,8 @@
 #include <iostream>
 
-int main(void){
-  std::cout << "hello 12345" << std::endl;
+int main(void) {
+  int f = 7;
+  int s{3};
+  std::cout << f << std::endl;
   return 0;
 }
